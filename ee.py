@@ -14,7 +14,7 @@ def qstn():
     win2.mainloop()
     win2.deiconify()
 def qstn2():
-    global btn1,qstns,answrs,n,m,rez
+    global btn1,qstns,answrs,n,m,rez, entry1
     if n==0 and ans.get()==2:
         rez+=1
     elif n==1 and ans.get()==1:
@@ -39,10 +39,10 @@ def qstn2():
     answer3.configure(text=answrs[m+2])
     if n==5:
         win2.withdraw()
-        messagebox.showinfo("Результат", "Ваш результат:  "+str(rez))
+        messagebox.showinfo("Результат",f"Ваш результат\n{entry1.get()}:  "+str(rez))
+
         
-        
-qstns = ["На якому язике програмування работає Roblox?","Які є версії скриптів у Roblox Studio?","Для чого зроблен Output?","Що робе Animation Spoofer в Roblox Studio?","Що таке Client Test?",""]
+qstns = ["На якому язике програмування работає Roblox?","Які є версії скриптів у Roblox Studio?","Для чого зроблен Output?","Що робить Animation Spoofer в Roblox Studio?","Що таке Client Test?",""]
 answrs = ["Python","Lua","C#","ServerScript, LocalScript, ModuleScript","Script, LocalScript, OutputScript","ModuleScript, ServerScript, VisualScript","Щоб бачити свої помилки","Щоб бачити всі текстури в проєкті","Щоб писати там код","Щоб удалити всі анімації які є в проєкті","Щоб робити анімації","Щоб виложити чью-то анімацію як твою","Client - це тест ігри, від лиця ігрока.","Client - це тест ігри, від лиця Роблокса.","Client -  це тестирование ігри, від лиця разработчика.","","",""]
 n=0
 n=0
@@ -80,3 +80,29 @@ win.mainloop()
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# yeah!!!!!!!! >:3
