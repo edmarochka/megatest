@@ -4,7 +4,7 @@ from tkinter import messagebox
 
 win = CTk()
 
-win.geometry("600x400")
+win.geometry("250x150")
 win.title("мега тест")
 
 def qstn():
@@ -77,3 +77,6 @@ btn=CTkButton(win,text="Почати тест",command=qstn)
 btn.grid(row=2,column=3,pady=20)
 
 win.mainloop()
+
+
+
