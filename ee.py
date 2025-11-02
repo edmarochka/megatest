@@ -42,9 +42,8 @@ def qstn2():
         messagebox.showinfo("Результат",f"Ваш результат\n{entry1.get()}:  "+str(rez))
 
         
-qstns = ["На якому язике програмування работає Roblox?","Які є версії скриптів у Roblox Studio?","Для чого зроблен Output?","Що робить Animation Spoofer в Roblox Studio?","Що таке Client Test?",""]
-answrs = ["Python","Lua","C#","ServerScript, LocalScript, ModuleScript","Script, LocalScript, OutputScript","ModuleScript, ServerScript, VisualScript","Щоб бачити свої помилки","Щоб бачити всі текстури в проєкті","Щоб писати там код","Щоб удалити всі анімації які є в проєкті","Щоб робити анімації","Щоб виложити чью-то анімацію як твою","Client - це тест ігри, від лиця ігрока.","Client - це тест ігри, від лиця Роблокса.","Client -  це тестирование ігри, від лиця разработчика.","","",""]
-n=0
+qstns = ["На якому язике програмування работає Roblox?","Які є версії скриптів у Roblox Studio?","Для чого зроблен Output?","Що таке Плагіни в Roblox Studio?","Що таке Client Test?",""]
+answrs = ["Python","Lua","C#","ServerScript, LocalScript, ModuleScript","Script, LocalScript, OutputScript","ModuleScript, ServerScript, VisualScript","Щоб бачити свої помилки","Щоб бачити всі текстури в проєкті","Щоб писати там код","Це вікно, яке показує ігру.","Це программа яка видаляє проєкт","Це программа яка була зробленна не роблоксом, які могуть допомогти разработчику.","Client - це тест ігри, від лиця ігрока.","Client - це тест ігри, від лиця Роблокса.","Client -  це тест ігри, від лиця разработчика.","","",""]
 n=0
 m=0
 rez=0
@@ -56,6 +55,7 @@ frm = CTkFrame(win2)
 frm.pack()
 label_win = CTkLabel(frm,text=qstns[n],font=('Helvetica',25,'bold'))
 label_win.pack(pady=20)
+
 ans = IntVar(value=0)
 answer1 = CTkRadioButton(frm,text=answrs[n],variable=ans,value=1)
 answer1.pack(pady=20)
@@ -76,33 +76,5 @@ entry1.grid(row=0, column=3,pady=20)
 btn=CTkButton(win,text="Почати тест",command=qstn)
 btn.grid(row=2,column=3,pady=20)
 
+
 win.mainloop()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# yeah!!!!!!!! >:3
